@@ -59,8 +59,8 @@ if __name__ == '__main__':
     # of June, July, August, November and December at 00:00, 01:00, 02:00 and 03:00
     sched.add_job(MooningSI, 'cron', day_of_week='mon-fri', hour=7, minute=50)
     sched.add_job(MooningSO, 'cron', day_of_week='mon-fri', hour=11, minute=50)
-    sched.add_job(NoonSI, 'cron', day_of_week='mon-fri', hour=1, minute=50)
-    sched.add_job(NoonSO, 'cron', day_of_week='mon-fri', hour=5, minute=50)
+    sched.add_job(NoonSI, 'cron', day_of_week='mon-fri', hour=13, minute=50)
+    sched.add_job(NoonSO, 'cron', day_of_week='mon-fri', hour=17, minute=50)
     
     sched.start()
     
